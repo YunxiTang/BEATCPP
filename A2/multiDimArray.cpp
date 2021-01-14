@@ -8,7 +8,8 @@ int main(void){
 	{
 		for(int j=0;j<3;j++)
 		{
-			cout << Rotation[i][j] << endl;
+			cout << "Rotation[" << i << 
+				"][" << j << "]: " << Rotation[i][j] << endl;
 		}
 	}
 	return 0;
