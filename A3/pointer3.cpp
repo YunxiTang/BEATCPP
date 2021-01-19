@@ -42,6 +42,28 @@ int test2(void)
 	return 0;
 }
 
+int test3(void)
+{
+	//指针的比较
+	int var[MAX] = {10,100,1000};
+
+	int *ptr = NULL;
+
+	ptr = var;
+
+	int i = 0;
+
+	while(ptr <= &var[MAX-1])
+	{
+		cout << "Address of var[" << i << "] = " << ptr << endl;
+		cout << "(By Pointer) Value of var[" << i << "] = " << *ptr << endl;
+
+		ptr = ptr + 1;
+		i = i + 1;
+	}
+	return 0;
+}
+
 int main(void)
 {
 	int k = 1;
@@ -55,6 +77,10 @@ int main(void)
 	else if (k==2)
 	{
 		test2();
+	}
+	else if (k==3)
+	{
+		test3();
 	}
 	else
 	{}
