@@ -22,7 +22,7 @@ class Box
             return length * width * height;
         }
 
-        Box operator + (const Box& b){
+        Box operator + (const Box &b){
             Box box;
             box.height = this->height + b.height;
             box.length = this->length + b.length;
