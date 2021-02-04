@@ -15,3 +15,7 @@ echo `expr index "${str2}" ya`
 #1D array is supported in shell
 Lang=("Python" "Java" "CPP" "MATLAB" "R")
 echo ${Lang[1]}
+echo ${#Lang[*]}
+for i in 0 1 2 3 4; do
+	echo ${Lang[${i}]}
+done

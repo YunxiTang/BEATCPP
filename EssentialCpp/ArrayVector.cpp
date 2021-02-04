@@ -7,10 +7,11 @@ using namespace std;
 int main(void){
     vector<int> vec;
     int i;
+    vec.reserve(5);
 
     // show the original size of vec
     cout << "size of vec: " << vec.size() << endl;
-
+    cout << "Capacity of vec: " << vec.capacity() << endl;    
     // push 5 values into vec
     for ( i = 0; i < 5; i++)
     {
@@ -23,7 +24,8 @@ int main(void){
     {
         cout << "value of vec[" << i << "]: " << vec[i] << endl;
     }
-
+    cout << "size of vec: " << vec.size() << endl;
+    cout << "Capacity of vec: " << vec.capacity() << endl;    
     // use iterator to access value in vec
     vector<int>::iterator v=vec.begin();
     while (v != vec.end())
